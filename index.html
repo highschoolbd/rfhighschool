@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয় | Kalagachia R.F High School</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=SolaimanLipi&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="school favicon.png">
+    <style>
+        body {
+            font-family: 'SolaimanLipi', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 139, 0.7), rgba(0, 0, 139, 0.7)), url('https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/494118512_9684487814966465_3845587787490981934_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=101&ccb=1-7&_nc_sid=536f4a&_nc_ohc=oeE5lt7WyWMQ7kNvwFxu0-p&_nc_oc=AdnA2QLNRehI7HRMgGC_hQZkZNT4bvCL1uB6qGJQhPYDlFAtN44b1sXF9ndFZhg5puA&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=VMci68Uc82aG0x5qayD1hg&oh=00_AfKfFpr4qzO0mB-kCsIQ-lT8m4VVLTYDC8s1kmtlMp5pdQ&oe=68339B35');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                
+                <h1 class="text-xl font-bold">কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয়</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="nav-link">হোম</a>
+                <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+                <a href="#academics" class="nav-link">একাডেমিক</a>
+                <a href="#admissions" class="nav-link">ভর্তি</a>
+                <a href="#gallery" class="nav-link">গ্যালারি</a>
+                <a href="#contact" class="nav-link">যোগাযোগ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScL-vVmo4lemCifyJ2EA5C8LJUYuttjCZgLsoVG1yboyk6A6w/viewform?usp=dialog" class="nav-link">অনলাইন ভর্তি </a>
+                <a href="https://sites.google.com/view/kalagachiarfhighschoolmagazine/home" class="nav-link">স্কুল ম্যাগাজিন </a>
+            </nav>
+            <button class="md:hidden text-2xl" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-blue-900 px-4 py-2" id="mobile-menu">
+            <a href="#home" class="block py-2 border-b border-blue-700">হোম</a>
+            <a href="#about" class="block py-2 border-b border-blue-700">আমাদের সম্পর্কে</a>
+            <a href="#academics" class="block py-2 border-b border-blue-700">একাডেমিক</a>
+            <a href="#admissions" class="block py-2 border-b border-blue-700">ভর্তি</a>
+            <a href="#gallery" class="block py-2 border-b border-blue-700">গ্যালারি</a>
+            <a href="#contact" class="block py-2">যোগাযোগ</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয়</h1>
+            <p class="text-xl md:text-2xl mb-8">শিক্ষা, শৃঙ্খলা, ও উন্নতির প্রতীক</p>
+            <a href="#about" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-blue-100 transition duration-300 inline-block">আমাদের সম্পর্কে জানুন</a>
+        </div>
+    </section>
+
+    <!-- Welcome Message -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgz1X_kxYO75OFz99k24yZf_Xo_ZhMGPGnt9FVsnOEwmSuhiueKL3rUOq9nPYjyN6209nouDDEkLImI50o1RgqpKhGjlaZliHXesWx_eFY0RtTc7ipeiv02Gop6Q4Vt6StStdwhKLnW-3uKQk0eOBS3Du2Mi5o0n3Pz9s91Nl7LmMaQ6L7syj0YrkuTGD4/s320/Capture.png" alt="Headmaster" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl md:text-3xl font-bold text-blue-800 mb-4">প্রধান শিক্ষকের বাণী</h2>
+                    <p class="text-gray-700 mb-4 text-lg">বাধ্যতামূলক শিক্ষা অর্জন ও সম্ভাবনাময় শিক্ষার্থীদের গড়ে তোলার লক্ষ্যে ২০০১ সালে প্রতিষ্ঠা লাভ করে কলাগাছিয়া মোঃ রফিকুল ইসলাম এন্ড ফারজানা ইসলাম উচ্চ  বিদ্যায়লয় সংক্ষেপে <b>কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয়</b>। প্রতিষ্ঠালগ্ন থেকে আমরা শিক্ষার্থীদের মানবিক মূল্যবোধ ও নৈতিকতায় বলিয়ান করে তথ্যপ্রযুক্তির জ্ঞানে সমৃদ্ধ করে গড়ে তুলছি।</p>
+                    <p class="text-gray-700 text-lg">আমাদের লক্ষ্য স্কুলের প্রতিটি শিক্ষার্থীকে মানসম্মত শিক্ষার আলোয় আলোকিত করা এবং দক্ষ মানবসম্পদে পরিণত করা। আপনাদের সন্তানদের উজ্জ্বল ভবিষ্যৎ গড়তে আমাদের প্রতিষ্ঠানে স্বাগত।</p>
+                    <p class="mt-4 font-medium text-blue-800">- জনাব মোঃ নুরুল ইসলাম <br>প্রধান শিক্ষক</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="py-12 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">আমাদের কিছু সংখ্যা</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">20+</div>
+                    <div class="text-gray-700">বছরের অভিজ্ঞতা</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">25+</div>
+                    <div class="text-gray-700">প্রশিক্ষিত শিক্ষক</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">1500+</div>
+                    <div class="text-gray-700">সফল শিক্ষার্থী</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">95%</div>
+                    <div class="text-gray-700">পাশের হার</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">আমাদের সম্পর্কে</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-4">ইতিহাস</h3>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-2/3 md:pr-8 mb-6 md:mb-0">
+                        <p class="text-gray-700 mb-4">২০০১ সালে জনাব মোঃ রফিকুল ইসলাম ও তার স্ত্রী ফারজানা ইসলাম এবং এলাকাবাসীর আন্তরিক চেষ্টা ও সরকারি সহযোগিতায় কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয় প্রতিষ্ঠিত হয়। শুরুতে মাত্র কয়েকটি শ্রেণী এবং স্বল্পসংখ্যক শিক্ষার্থী নিয়ে যাত্রা শুরু করলেও বর্তমানে এটি আড়াইহাজার উপজেলার অন্যতম সেরা শিক্ষাপ্রতিষ্ঠান হিসেবে স্বীকৃত।</p>
+                        <p class="text-gray-700">গত দুই দশকের বেশি সময় ধরে আমরা শিক্ষার গুণগত মান নিশ্চিত করে আসছি। শিক্ষার্থীদের সুপ্ত প্রতিভা বিকাশে নানাবিধ সহশিক্ষা কার্যক্রম পরিচালনা করে আমরা জাতীয় পর্যায়ে সাফল্য অর্জন করেছি। নিয়মিত উন্নয়নমূলক কর্মকাণ্ডের মাধ্যমে প্রতিষ্ঠানটি আজ অত্যাধুনিক সুযোগ-সুবিধা সমৃদ্ধ।</p>
+                    </div>
+                    <div class="md:w-1/3">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjql1ualXEhLHeh2YuxjKAy7pPIkC5ARzg0nWNrUhD2nBUhUZdZyFrRXzk5_YM2za_1lSuwrGLtWscMiqu7BukrINJqz9tIWLpKsKrzyNPHfEk-GyDn27ELj4C_nRfmeHMr0HHPbEAVYSUyWWizghD4E9F_Rhl4bbMvv4o0bqAqUSlN5Nbt3Ray3u7rnYY/s320/Untitled%20design%20(1).png" alt="School History" class="rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">আমাদের লক্ষ্য</h3>
+                    <p class="text-gray-700">শিক্ষার্থীদের মাঝে নৈতিকতা, শৃঙ্খলাবোধ ও দেশপ্রেম জাগ্রত করে সুশিক্ষায় শিক্ষিত করে তোলা। বিজ্ঞান ও প্রযুক্তির সাথে তাল মিলিয়ে সমাজের চাহিদা অনুযায়ী দক্ষ মানবসম্পদ তৈরির মাধ্যমে জাতীয় উন্নয়নে অবদান রাখা।</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">আমাদের ভিশন</h3>
+                    <p class="text-gray-700">আধুনিক শিক্ষা পদ্ধতির সমন্বয়ে একটি আদর্শ শিক্ষাপ্রতিষ্ঠান হিসেবে গড়ে তোলা যেখানে প্রতিটি শিক্ষার্থীর সার্বিক বিকাশ নিশ্চিত হবে। আমরা চাই আমাদের প্রতিটি শিক্ষার্থী জ্ঞান-বিজ্ঞানে সমৃদ্ধ হয়ে বিশ্বমঞ্চে বাংলাদেশের মুখ উজ্জ্বল করবে।</p>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-6 text-center">স্কুলের পরিবেশ</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/462531376_8471393272942598_930482596496539349_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=lKbOZQy4-8EQ7kNvwHmW8kd&_nc_oc=Adm5U_cOOgxaypcB2SxjTvf6yQXKYrnxX-jiBQGk4rMR2CntYpZ7qtsQ-pmjxtbaM5s&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=JFAgFSuGpCjVt-73KU4rYQ&oh=00_AfI4kqyOvH9meYxif0pTciATq0bjafJdJbtrhGtUfwsJ2w&oe=6833AA2F" alt="Classroom" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_z8kfSj5Ik7R_8K5wk2wGjgpRk3XcFP78e4XgquInLVW5mi_444ZY7u8VvIAg21vxsErTaLcigDFo7bdK7X8UifPlLEP2HwMeuCYll2guMHGX-vu0I-8Ln5gr3QZh7eUg0eSL8kMWVHUOIzZgOmSYYhETMVie7fJwdIhdWNdbCTvIo6RXFcC-sM_GGls/s320/Class-Room.jpg" alt="Library" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN5b49IPU2LRq6pOCTHOe7ejwymrIT6lc5sX1xobmibIxIJAVsL3uknvgjDztef1gBuU6slKFydpXU3qGI_GFBYF40AuLcA8r3aZ1gDrq9ZNZ29RD83KtoMRdJbh81rPFxvsQxPQJmaZeErw5SOd_ry4Q1kT0PFcmjvQ5YvVfnUWkMNn4GskdxsL4ySWo/s320/470231942_8882437285171526_971775706929876839_n.jpg" alt="Playground" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk0YKjP2ELAzxcyYl_wZWnT5nP3BOmIi3U5XWP4VkIFQPpVogt2RoVwCZs5VrICrYE-gJeGvRG1kzfEDOOTDtlTvXjDRGEui8N-iO_36y2g0Ar_FszLKFhuNbpVC4Lxz0OAJvH9WB4xNOv1NqTN0Cv71H7Vspt8OpewDCp9w0spZhuh8I57hWGpiIAqco/s320/473287150_9039358302812756_8973878082760930256_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioXwV2_6Mu7BeR8occKqz1wxZ4tElPf5nH53f4GobLWZuWgs4i_SeZxuhqIEHdE5DmfS-T8OWHPccQEMeCLwDw8YRw2DILKS1lHR2FAtyRbiP0vYTellKvp_LuhDy_eKw2IWEtSVAkoJk1uwWT9q09afs342rGXKocEsCGzCWa6YDuvveO6zCeh_-Cusc/s320/480498673_9256087547806496_1047814415293410792_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGJcLqD90Ay0vri7iV1_siuTGFoON_s5Nc9vYMOq6oR9FpxXorIVyIERT1w622QRKOPZ4Lv8V2dCRPXWKOzJcamKth9iH7ZBhMs06ht2K11N4RYC3WOtxX6UJYDSkMvK8OEOuDwv0dUcDsstjK7yh36Gv9q0aOTr728z8pI_mQ-5t8rohlwx3SCZIjRpQ/s320/480561815_9256086987806552_8370999402721739482_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCIp7vfis646ZNPLQ-0p6br1PJuQ3xEqXNrWzEiyAv8zXkMS5Nm9ydHm_EYJjldTxeqTZ5n4qYlvrJ8dhycJVFOH7C1frPhlPRIquh8nuMQD41e2-g44Eq0oPga1a-M-d_fROgMaDzBp_1hLjoZfXCJHg6Cxvha6fNHjgyTYMv7XPxObY5v650-A1zD7Q/s320/480571303_9256086487806602_5479181076498919583_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ48BnjgMPgYTXCGykRbuf5KaUKEEOVEXC3VzYcBEbeega8ETUH2qLlu8_abqPh_-ygHIA9qBG3WEJQ9TgBu7-v2k35uNfKQrHyVDXs60MFnv-Kk99t2yEJ-PMIrL_DoYcLxWXnMzjOFVjBzEQm9bw2QFupcEoFJU1jK3hg_IZhyDCy-buGRCgI69BlA4/s320/471854785_8965059373575983_4794915180974273154_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-12 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">একাডেমিক তথ্য</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-4">আমাদের শিক্ষা কার্যক্রম</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-700 text-4xl mb-4">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">বিজ্ঞান বিভাগ</h4>
+                        <p class="text-gray-700">আধুনিক ল্যাব সুবিধা সমৃদ্ধ বিজ্ঞান বিভাগে পদার্থবিদ্যা, রসায়ন, জীববিজ্ঞান ও গণিত বিষয়ে বিশেষায়িত পাঠদানের ব্যবস্থা রয়েছে।</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-700 text-4xl mb-4">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">ব্যবসায় শিক্ষা</h4>
+                        <p class="text-gray-700">ব্যবসায় সংগঠন, হিসাববিজ্ঞান, ব্যবসায় উদ্যোগ ও অর্থসংস্থান বিষয়ে গুণগত শিক্ষাদানের মাধ্যমে ভবিষ্যৎ উদ্যোক্তা তৈরির উদ্দেশ্যে পরিচালিত হয়।</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-blue-700 text-4xl mb-4">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h4 class="text-lg font-bold mb-2">মানবিক বিভাগ</h4>
+                        <p class="text-gray-700">ইতিহাস, ভূগোল, অর্থনীতি, সমাজবিজ্ঞান ও ইসলাম শিক্ষা বিষয়ে পাঠদানের পাশাপাশি নৈতিক শিক্ষা ও সাংস্কৃতিক চর্চার বিশেষ সুযোগ রয়েছে।</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-6 text-center">আমাদের সুবিধা সমূহ</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-start">
+                        <div class="text-blue-700 mr-3 mt-1">
+                            <i class="fas fa-microscope text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">আধুনিক ল্যাব</h4>
+                            <p class="text-gray-700 text-sm">বিজ্ঞান বিভাগের জন্য সুসজ্জিত ল্যাবরেটরি</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-start">
+                        <div class="text-blue-700 mr-3 mt-1">
+                            <i class="fas fa-book text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">গ্রন্থাগার</h4>
+                            <p class="text-gray-700 text-sm">বিভিন্ন বিষয়ের ৫,০০০+ বইয়ের সংগ্রহ</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-start">
+                        <div class="text-blue-700 mr-3 mt-1">
+                            <i class="fas fa-laptop text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">কম্পিউটার ল্যাব</h4>
+                            <p class="text-gray-700 text-sm">আধুনিক কম্পিউটার ও ইন্টারনেট সুবিধা</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md flex items-start">
+                        <div class="text-blue-700 mr-3 mt-1">
+                            <i class="fas fa-futbol text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-1">খেলার মাঠ</h4>
+                            <p class="text-gray-700 text-sm">বৃহৎ খেলার মাঠ ও ক্রীড়া সরঞ্জাম</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-6 text-center">শিক্ষকবৃন্দ</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মো: নুরুল ইসলাম </h4>
+                            <p class="text-gray-700 text-xs">প্রধান শিক্ষক</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">খোকন চন্দ্র সূত্র দয় </h4>
+                            <p class="text-gray-700 text-xs">সহকারী প্রধান শিক্ষক</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মো বাসেদ স্যার </h4>
+                            <p class="text-gray-700 text-xs">ব্যবসায় শিক্ষা শিক্ষক</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মো বিল্লাল স্যার </h4>
+                            <p class="text-gray-700 text-xs">ব্যবসায় শিক্ষা শিক্ষক</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মো আব্দুল মান্নান স্যার </h4>
+                            <p class="text-gray-700 text-xs">ইংরেজি শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মো: সোহেল স্যার </h4>
+                            <p class="text-gray-700 text-xs">গেস্ট শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মো: তানভীর আহমেদ সোহেল স্যার </h4>
+                            <p class="text-gray-700 text-xs">গেস্ট শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মোঃ রাকিবিল্লা স্যার  </h4>
+                            <p class="text-gray-700 text-xs">মানবিক শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">রানী খন্দকার </h4>
+                            <p class="text-gray-700 text-xs">বিজ্ঞান শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">শিমু রানী দাস </h4>
+                            <p class="text-gray-700 text-xs">বিজ্ঞান শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">নাজমা আক্তার</h4>
+                            <p class="text-gray-700 text-xs"> মানবিক শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">জোলেখা ম্যাম </h4>
+                            <p class="text-gray-700 text-xs">মানবিক শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">রোকেয়া সরকার </h4>
+                            <p class="text-gray-700 text-xs">মানবিক শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মোঃ আশরাফুল স্যার</h4>
+                            <p class="text-gray-700 text-xs">বিজ্ঞান শিক্ষক</p>
+                        </div>
+                    </div>
+                     <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মোঃ রুহুল আমিন স্যার</h4>
+                            <p class="text-gray-700 text-xs">ক্রিয়া শিক্ষক</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="https://tinyurl.com/4uzcupe5" alt="Teacher" class="w-full h-32 object-cover">
+                        <div class="p-3">
+                            <h4 class="font-bold text-sm">মোঃ আব্দুর রাহিম স্যার</h4>
+                            <p class="text-gray-700 text-xs">কম্পিউটার শিক্ষক </p>
+                        </div>
+                    </div>
+                     
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">ভর্তি তথ্য</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">ভর্তির নিয়মাবলী</h3>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="text-blue-700 mr-2 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>৬ষ্ঠ থেকে ৯ম শ্রেণী পর্যন্ত ভর্তি চলছে</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-700 mr-2 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>ভর্তি ফরম স্কুল অফিস থেকে সংগ্রহ করতে হবে</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-700 mr-2 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>জন্ম নিবন্ধন সনদের কপি</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-700 mr-2 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>৩ কপি পাসপোর্ট সাইজের রঙিন ছবি</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-700 mr-2 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>পূর্ববর্তী শ্রেণীর মার্কশিট/প্রমাণপত্র</span>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="text-blue-700 mr-2 mt-1">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <span>মূল্যায়ন পরীক্ষায় উত্তীর্ণ হতে হবে <i>(শুধু মাত্র ৬ষ্ঠ শ্রেণীর জন্য )</i></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-blue-700 mb-4">ভর্তির সময়সূচী</h3>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full">
+                                <thead>
+                                    <tr>
+                                        <th class="text-left py-2 px-3 border-b border-blue-200 text-blue-700">কার্যক্রম</th>
+                                        <th class="text-left py-2 px-3 border-b border-blue-200 text-blue-700">তারিখ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-2 px-3 border-b border-blue-200">ভর্তি ফরম বিতরণ</td>
+                                        <td class="py-2 px-3 border-b border-blue-200">১ ডিসেম্বর - ২৫ ডিসেম্বর</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 border-b border-blue-200">আবেদন জমাদান</td>
+                                        <td class="py-2 px-3 border-b border-blue-200">৩০ ডিসেম্বর পর্যন্ত</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 border-b border-blue-200">লিখিত পরীক্ষা</td>
+                                        <td class="py-2 px-3 border-b border-blue-200">০৫ জানুয়ারী</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 border-b border-blue-200">ফলাফল প্রকাশ</td>
+                                        <td class="py-2 px-3 border-b border-blue-200">১৫ জানুয়ারী</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 px-3 border-b border-blue-200">শ্রেণী কার্যক্রম শুরু</td>
+                                        <td class="py-2 px-3 border-blue-200">১ ফেব্রুয়ারী</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-6">আমাদের ভর্তি কার্যক্রম</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="Admission Process" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="Admission Exam" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="New Students" class="rounded-lg shadow-md h-48 w-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-12 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">গ্যালারি</h2>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-blue-700 mb-4 text-center">স্কুলের বিভিন্ন অনুষ্ঠান</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="relative group">
+                        <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/474761048_9104722796276306_7577949373916975382_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=obV5VR7NhncQ7kNvwGgOQGB&_nc_oc=AdnLNHdD3yepHMu51pcWyld-3KQwTz7grkT-AwbB_SZ6SlBIFD1r0FpAiFj1ez4zhWc&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=gBab8EqiKK45bmFjghWFtg&oh=00_AfLhjQuW_OUNSuR_ljkCH1yrBOQGr8BF8RKLob7HgIWabg&oe=68339E97" alt="Annual Function" class="rounded-lg shadow-md h-48 w-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition duration-300">
+                            <span class="text-white font-medium">বিজ্ঞান মেলা</span>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/474694865_9104719949609924_4174576437448993612_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=XxykNpgIDpsQ7kNvwFa1P4s&_nc_oc=Adn1RApCM-_34EeiuF2wdEaqjAbfQLRp2_ULdJc7GKM6IN9d4Owa9_credNTCZtCmNI&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=IcwNQMd5pyvZ-kmh2ENMmA&oh=00_AfIvDJqR3koXDveaoOlN7XR7ATeNR6XoMYuDF1nAYaMuuA&oe=6833AECB" alt="Cultural Program" class="rounded-lg shadow-md h-48 w-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition duration-300">
+                            <span class="text-white font-medium">বিজ্ঞনা মেলা</span>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/474564142_122154404894310596_6829275821696977346_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=4p4qYuJ9x9oQ7kNvwFK9Ppd&_nc_oc=AdnrGqlpeb4LEXX_6JVkKjDZVc83QIUkkGrti5XjEL7LAjk6tPxIqU5lDNJV4b-ficE&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=NYaf47PtUmUMoXZq2IMGkA&oh=00_AfKocVfjwrQrKLxq5jureGn9agTGp4LHwzRDZYBlH4Hh8g&oe=68339A0E" alt="Sports Day" class="rounded-lg shadow-md h-48 w-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition duration-300">
+                            <span class="text-white font-medium">তারুণ্য উৎসব ২০২৫</span>
+                        </div>
+                    </div>
+                    <div class="relative group">
+                        <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/480680478_9256086337806617_3769867584836304443_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=106&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=0X__qApFsLIQ7kNvwHHjYa5&_nc_oc=AdnWmvY3yVJIIjKFY16DtCWdUD8Zj61tZuUOAjdHehBkd7djCLw5RZFyFmAath_0V6U&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=Lw5myMOlQ7dWADfMuX-vRQ&oh=00_AfLjwIIHOeS3yAgOD4GDuejhW4DiEJzfaI_Zy7k1vNV_ZQ&oe=6833BE9B" alt="Independence Day" class="rounded-lg shadow-md h-48 w-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition duration-300">
+                            <span class="text-white font-medium">২১ ফেব্রুয়ারি, আন্তর্জাতিক মাতৃভাষা দিবস</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-xl font-bold text-blue-700 mb-4 text-center">শিক্ষার্থীদের দৈনন্দিন কার্যক্রম</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/494118512_9684487814966465_3845587787490981934_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=101&ccb=1-7&_nc_sid=536f4a&_nc_ohc=oeE5lt7WyWMQ7kNvwFmmcKc&_nc_oc=AdkJnnto8piy9qQphQMn3a75Ktb4nVj8S4y1SFRQR8Ww7xU8F-ugfq3QP8OlMifLwPY&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=tllBDrdhdpZSVx8q7ekHZw&oh=00_AfJMuhYAjise4lj8Goy7um4dF9WE8p6mX64KESaUqSxt0w&oe=68339B35" alt="Classroom Activity" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="Lab Activity" class="rounded-lg shadow-md h-48 w-full object-cover">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="Library Activity" class="rounded-lg shadow-md h-48 w-full object-cover">
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold text-blue-700 mb-4 text-center">ভিডিও গ্যালারি</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="relative pb-[56.25%] bg-black rounded overflow-hidden">
+                              <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/FDc8UXXUCQw?si=AF6a5V3lFS8F9D2J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h4 class="mt-3 font-bold text-blue-800">Rani Khandakar Senior Teacher</h4>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <div class="relative pb-[56.25%] bg-black rounded overflow-hidden">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dUdrkmXL9kE?si=01rm9VUwKRmseO3p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <h4 class="mt-3 font-bold text-blue-800">মো: বিল্লাল হোসেন,বিষয়: হিসাব বিজ্ঞান,শ্রেণি:নবম</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & News -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center text-blue-800 mb-12">ইভেন্টস ও নোটিস</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="event-card bg-blue-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="Exam Notice" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <div class="text-xs text-blue-600 mb-2">১৬ নভেম্বর, ২০২৫</div>
+                        <h3 class="text-lg font-bold mb-2">বার্ষিক পরীক্ষার সময়সূচী</h3>
+                        <p class="text-gray-700 text-sm">১ ডিসেম্বর থেকে শুরু হচ্ছে বার্ষিক পরীক্ষা। সকল শিক্ষার্থীর জন্য সময়সূচী জানার জন্য দেখুন...</p>
+                        <a href="#" class="inline-block mt-2 text-blue-700 text-sm font-medium">বিস্তারিত জানুন</a>
+                    </div>
+                </div>
+                
+                <div class="event-card bg-blue-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/475072564_9104714696277116_1304366223620358944_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=fwWYslBR8swQ7kNvwEimFjF&_nc_oc=Admxm7Sic4FvRsIjIFk2L_O_pJ83NkPK09KwBeqo0Ll9cUWx43U0yhP437krc_bbZQI&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=6D4MGZyoL6m0RuiBtAtgkg&oh=00_AfIv_hMIuEbeNPTWQQdCfX0_SFmaKR6Vi-eRUPTb2Fv5SQ&oe=6833B0E5" alt="Science Fair" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <div class="text-xs text-blue-600 mb-2"> ২৫ জানুয়ারী, ২০২৫</div>
+                        <h3 class="text-lg font-bold mb-2">বিজ্ঞান মেলা - ২০২৫</h3>
+                        <p class="text-gray-700 text-sm">বিদ্যালয় প্রাঙ্গণে আগামী ২০ ডিসেম্বর অনুষ্ঠিত হতে যাচ্ছে বার্ষিক বিজ্ঞান মেলা। অংশগ্রহণ করতে...</p>
+                        <a href="#" class="inline-block mt-2 text-blue-700 text-sm font-medium">বিস্তারিত জানুন</a>
+                    </div>
+                </div>
+                
+                <div class="event-card bg-blue-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://tinyurl.com/4uzcupe5" alt="Parents Meeting" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <div class="text-xs text-blue-600 mb-2">১০ ডিসেম্বর, ২০২৩</div>
+                        <h3 class="text-lg font-bold mb-2">অভিভাবক সমাবেশ</h3>
+                        <p class="text-gray-700 text-sm">বিদ্যালয় কর্তৃপক্ষ আগামী ২৫ ডিসেম্বর অভিভাবক সমাবেশের আয়োজন করেছে। সকল অভিভাবককে...</p>
+                        <a href="#" class="inline-block mt-2 text-blue-700 text-sm font-medium">বিস্তারিত জানুন</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">যোগাযোগ করুন</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">আমাদের ঠিকানা</h3>
+                    <div class="space-y-4">
+                        <p class="flex items-start">
+                            <span class="mr-3 mt-1"><i class="fas fa-map-marker-alt"></i></span>
+                            ভিটি কলাগাছিয়া, ব্লক-ডি, ওয়ার্ড নং-০২, হোল্ডিং নং-৩২, আরাইহাজার, নারায়ণগঞ্জ, ঢাকা বিভাগ, বাংলাদেশ
+                        </p>
+                        <p class="flex items-center">
+                            <span class="mr-3"><i class="fas fa-phone-alt"></i></span>
+                            ০১৮১৩০৯১৮৮২
+                        </p>
+                        <p class="flex items-center">
+                            <span class="mr-3"><i class="fas fa-envelope"></i></span>
+                            kalagachia.rf.highschool@gmail.com
+                        </p>
+                        <p class="flex items-center">
+                            <span class="mr-3"><i class="fas fa-id-card"></i></span>
+                            EIIN: ১১২৩০১
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-3">আমাদের সাথে যুক্ত থাকুন</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/groups/839127194785598" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@kalagachiar.fhighschool3988" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="bg-blue-700 p-2 rounded-full hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">অবস্থান</h3>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4340.682995173794!2d90.69653092868411!3d23.81629572147939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375436f34b96e1df%3A0x8e62ce99cd1f29cc!2sKalagachia%20R.F.%20High%20School!5e0!3m2!1sen!2sbd!4v1747829783091!5m2!1sen!2sbd" class="w-full h-64 rounded-lg" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div>
+  <h3 class="text-xl font-bold mb-4">বার্তা পাঠান</h3>
+  <form id="contactForm" class="space-y-4">
+    <div>
+      <input type="text" name="name" placeholder="আপনার নাম" required class="w-full px-4 py-2 rounded bg-blue-700 border border-blue-600">
+    </div>
+    <div>
+      <input type="email" name="email" placeholder="ইমেইল ঠিকানা" required class="w-full px-4 py-2 rounded bg-blue-700 border border-blue-600">
+    </div>
+    <div>
+      <input type="text" name="subject" placeholder="বিষয়" class="w-full px-4 py-2 rounded bg-blue-700 border border-blue-600">
+    </div>
+    <div>
+      <textarea name="message" rows="4" placeholder="আপনার বার্তা" required class="w-full px-4 py-2 rounded bg-blue-700 border border-blue-600"></textarea>
+    </div>
+    <button type="submit" class="bg-white text-blue-800 px-6 py-2 rounded font-medium hover:bg-blue-100 transition duration-300">পাঠান</button>
+  </form>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    subject: form.subject.value,
+    message: form.message.value
+  };
+
+  const response = await fetch("https://formspree.io/f/xzzrqpaa", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  if (response.ok) {
+    alert("Message sent successfully!");
+    form.reset();
+  } else {
+    alert("Something went wrong. Please try again.");
+  }
+});
+</script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        
+                        <h2 class="text-lg font-bold">কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয়</h2>
+                    </div>
+                    <p class="mt-2 text-sm">শিক্ষা, শৃঙ্খলা, ও উন্নতির প্রতীক</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-sm">© ২০২৫ কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয়। সর্বসত্ত্ব সংরক্ষিত।</p>
+                    <p class="text-xs mt-1">ডিজাইন ও ডেভেলপমেন্ট: <i>ওয়ালিউর রহমান সিয়াম ক্লাস:১০ এসএসসি ২০২৬</i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
