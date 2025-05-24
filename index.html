@@ -6,7 +6,7 @@
     <title>কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয় | Kalagachia R.F High School</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=SolaimanLipi&display=swap" rel="stylesheet">
-    <link rel="icon" type="png" href="school favicon.png">
+    <link rel="icon" type="image/png" href="school favicon.png">
     <style>
         body {
             font-family: 'SolaimanLipi', sans-serif;
@@ -47,29 +47,40 @@
                 
                 <h1 class="text-xl font-bold">কলাগাছিয়া আর.এফ উচ্চ বিদ্যালয়</h1>
             </div>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#home" class="nav-link">হোম</a>
-                <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
-                <a href="#academics" class="nav-link">একাডেমিক</a>
-                <a href="#admissions" class="nav-link">ভর্তি</a>
-                <a href="#gallery" class="nav-link">গ্যালারি</a>
-                <a href="#contact" class="nav-link">যোগাযোগ</a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScL-vVmo4lemCifyJ2EA5C8LJUYuttjCZgLsoVG1yboyk6A6w/viewform?usp=dialog" class="nav-link">অনলাইন ভর্তি </a>
-                <a href="https://sites.google.com/view/kalagachiarfhighschoolmagazine/home" class="nav-link">স্কুল ম্যাগাজিন </a>
-            </nav>
+             <nav class="hidden md:flex space-x-6">
+    <a href="#home" class="nav-link">হোম</a>
+    <a href="#about" class="nav-link">আমাদের সম্পর্কে</a>
+    <a href="#academics" class="nav-link">একাডেমিক</a>
+    <a href="#admissions" class="nav-link">ভর্তি</a>
+    <a href="#gallery" class="nav-link">গ্যালারি</a>
+    <a href="#contact" class="nav-link">যোগাযোগ</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScL-vVmo4lemCifyJ2EA5C8LJUYuttjCZgLsoVG1yboyk6A6w/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="nav-link">অনলাইন ভর্তি</a>
+    <a href="https://sites.google.com/view/kalagachiarfhighschoolmagazine/home" target="_blank" rel="noopener noreferrer" class="nav-link">স্কুল ম্যাগাজিন</a>
+  </nav>
             <button class="md:hidden text-2xl" id="mobile-menu-button">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-blue-900 px-4 py-2" id="mobile-menu">
-            <a href="#home" class="block py-2 border-b border-blue-700">হোম</a>
-            <a href="#about" class="block py-2 border-b border-blue-700">আমাদের সম্পর্কে</a>
-            <a href="#academics" class="block py-2 border-b border-blue-700">একাডেমিক</a>
-            <a href="#admissions" class="block py-2 border-b border-blue-700">ভর্তি</a>
-            <a href="#gallery" class="block py-2 border-b border-blue-700">গ্যালারি</a>
-            <a href="#contact" class="block py-2">যোগাযোগ</a>
-        </div>
+         <div id="mobile-menu" class="hidden bg-blue-900 px-4 py-2 md:hidden">
+    <a href="#home" class="block py-2 border-b border-blue-700">হোম</a>
+    <a href="#about" class="block py-2 border-b border-blue-700">আমাদের সম্পর্কে</a>
+    <a href="#academics" class="block py-2 border-b border-blue-700">একাডেমিক</a>
+    <a href="#admissions" class="block py-2 border-b border-blue-700">ভর্তি</a>
+    <a href="#gallery" class="block py-2 border-b border-blue-700">গ্যালারি</a>
+    <a href="#contact" class="block py-2 border-b border-blue-700">যোগাযোগ</a>
+    <a href="https://tinyurl.com/y77mj2ts" target="_blank" rel="noopener noreferrer" class="block py-2 border-b border-blue-700">অনলাইন ভর্তি</a>
+    <a href="https://tinyurl.com/4ajxpeam" target="_blank" rel="noopener noreferrer" class="block py-2 border-b border-blue-700">স্কুল ম্যাগাজিন</a>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
     </header>
 
     <!-- Hero Section -->
@@ -154,16 +165,42 @@
             
             <div>
                 <h3 class="text-xl md:text-2xl font-bold text-blue-700 mb-6 text-center">স্কুলের পরিবেশ</h3>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/462531376_8471393272942598_930482596496539349_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=lKbOZQy4-8EQ7kNvwHmW8kd&_nc_oc=Adm5U_cOOgxaypcB2SxjTvf6yQXKYrnxX-jiBQGk4rMR2CntYpZ7qtsQ-pmjxtbaM5s&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=JFAgFSuGpCjVt-73KU4rYQ&oh=00_AfI4kqyOvH9meYxif0pTciATq0bjafJdJbtrhGtUfwsJ2w&oe=6833AA2F" alt="Classroom" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_z8kfSj5Ik7R_8K5wk2wGjgpRk3XcFP78e4XgquInLVW5mi_444ZY7u8VvIAg21vxsErTaLcigDFo7bdK7X8UifPlLEP2HwMeuCYll2guMHGX-vu0I-8Ln5gr3QZh7eUg0eSL8kMWVHUOIzZgOmSYYhETMVie7fJwdIhdWNdbCTvIo6RXFcC-sM_GGls/s320/Class-Room.jpg" alt="Library" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN5b49IPU2LRq6pOCTHOe7ejwymrIT6lc5sX1xobmibIxIJAVsL3uknvgjDztef1gBuU6slKFydpXU3qGI_GFBYF40AuLcA8r3aZ1gDrq9ZNZ29RD83KtoMRdJbh81rPFxvsQxPQJmaZeErw5SOd_ry4Q1kT0PFcmjvQ5YvVfnUWkMNn4GskdxsL4ySWo/s320/470231942_8882437285171526_971775706929876839_n.jpg" alt="Playground" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk0YKjP2ELAzxcyYl_wZWnT5nP3BOmIi3U5XWP4VkIFQPpVogt2RoVwCZs5VrICrYE-gJeGvRG1kzfEDOOTDtlTvXjDRGEui8N-iO_36y2g0Ar_FszLKFhuNbpVC4Lxz0OAJvH9WB4xNOv1NqTN0Cv71H7Vspt8OpewDCp9w0spZhuh8I57hWGpiIAqco/s320/473287150_9039358302812756_8973878082760930256_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioXwV2_6Mu7BeR8occKqz1wxZ4tElPf5nH53f4GobLWZuWgs4i_SeZxuhqIEHdE5DmfS-T8OWHPccQEMeCLwDw8YRw2DILKS1lHR2FAtyRbiP0vYTellKvp_LuhDy_eKw2IWEtSVAkoJk1uwWT9q09afs342rGXKocEsCGzCWa6YDuvveO6zCeh_-Cusc/s320/480498673_9256087547806496_1047814415293410792_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGJcLqD90Ay0vri7iV1_siuTGFoON_s5Nc9vYMOq6oR9FpxXorIVyIERT1w622QRKOPZ4Lv8V2dCRPXWKOzJcamKth9iH7ZBhMs06ht2K11N4RYC3WOtxX6UJYDSkMvK8OEOuDwv0dUcDsstjK7yh36Gv9q0aOTr728z8pI_mQ-5t8rohlwx3SCZIjRpQ/s320/480561815_9256086987806552_8370999402721739482_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCIp7vfis646ZNPLQ-0p6br1PJuQ3xEqXNrWzEiyAv8zXkMS5Nm9ydHm_EYJjldTxeqTZ5n4qYlvrJ8dhycJVFOH7C1frPhlPRIquh8nuMQD41e2-g44Eq0oPga1a-M-d_fROgMaDzBp_1hLjoZfXCJHg6Cxvha6fNHjgyTYMv7XPxObY5v650-A1zD7Q/s320/480571303_9256086487806602_5479181076498919583_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ48BnjgMPgYTXCGykRbuf5KaUKEEOVEXC3VzYcBEbeega8ETUH2qLlu8_abqPh_-ygHIA9qBG3WEJQ9TgBu7-v2k35uNfKQrHyVDXs60MFnv-Kk99t2yEJ-PMIrL_DoYcLxWXnMzjOFVjBzEQm9bw2QFupcEoFJU1jK3hg_IZhyDCy-buGRCgI69BlA4/s320/471854785_8965059373575983_4794915180974273154_n.jpg" alt="School Event" class="rounded-lg shadow-md h-48 w-full object-cover">
-                    
+                <!-- ✅ Image Grid with Popup Support -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  <img src="https://scontent.fdac99-1.fna.fbcdn.net/v/t39.30808-6/462531376_8471393272942598_930482596496539349_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=2285d6&_nc_ohc=lKbOZQy4-8EQ7kNvwHmW8kd&_nc_oc=Adm5U_cOOgxaypcB2SxjTvf6yQXKYrnxX-jiBQGk4rMR2CntYpZ7qtsQ-pmjxtbaM5s&_nc_zt=23&_nc_ht=scontent.fdac99-1.fna&_nc_gid=JFAgFSuGpCjVt-73KU4rYQ&oh=00_AfI4kqyOvH9meYxif0pTciATq0bjafJdJbtrhGtUfwsJ2w&oe=6833AA2F" alt="Classroom" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_z8kfSj5Ik7R_8K5wk2wGjgpRk3XcFP78e4XgquInLVW5mi_444ZY7u8VvIAg21vxsErTaLcigDFo7bdK7X8UifPlLEP2HwMeuCYll2guMHGX-vu0I-8Ln5gr3QZh7eUg0eSL8kMWVHUOIzZgOmSYYhETMVie7fJwdIhdWNdbCTvIo6RXFcC-sM_GGls/s320/Class-Room.jpg" alt="Library" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjN5b49IPU2LRq6pOCTHOe7ejwymrIT6lc5sX1xobmibIxIJAVsL3uknvgjDztef1gBuU6slKFydpXU3qGI_GFBYF40AuLcA8r3aZ1gDrq9ZNZ29RD83KtoMRdJbh81rPFxvsQxPQJmaZeErw5SOd_ry4Q1kT0PFcmjvQ5YvVfnUWkMNn4GskdxsL4ySWo/s320/470231942_8882437285171526_971775706929876839_n.jpg" alt="Playground" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk0YKjP2ELAzxcyYl_wZWnT5nP3BOmIi3U5XWP4VkIFQPpVogt2RoVwCZs5VrICrYE-gJeGvRG1kzfEDOOTDtlTvXjDRGEui8N-iO_36y2g0Ar_FszLKFhuNbpVC4Lxz0OAJvH9WB4xNOv1NqTN0Cv71H7Vspt8OpewDCp9w0spZhuh8I57hWGpiIAqco/s320/473287150_9039358302812756_8973878082760930256_n.jpg" alt="School Event" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEioXwV2_6Mu7BeR8occKqz1wxZ4tElPf5nH53f4GobLWZuWgs4i_SeZxuhqIEHdE5DmfS-T8OWHPccQEMeCLwDw8YRw2DILKS1lHR2FAtyRbiP0vYTellKvp_LuhDy_eKw2IWEtSVAkoJk1uwWT9q09afs342rGXKocEsCGzCWa6YDuvveO6zCeh_-Cusc/s320/480498673_9256087547806496_1047814415293410792_n.jpg" alt="School Event" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGJcLqD90Ay0vri7iV1_siuTGFoON_s5Nc9vYMOq6oR9FpxXorIVyIERT1w622QRKOPZ4Lv8V2dCRPXWKOzJcamKth9iH7ZBhMs06ht2K11N4RYC3WOtxX6UJYDSkMvK8OEOuDwv0dUcDsstjK7yh36Gv9q0aOTr728z8pI_mQ-5t8rohlwx3SCZIjRpQ/s320/480561815_9256086987806552_8370999402721739482_n.jpg" alt="School Event" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCIp7vfis646ZNPLQ-0p6br1PJuQ3xEqXNrWzEiyAv8zXkMS5Nm9ydHm_EYJjldTxeqTZ5n4qYlvrJ8dhycJVFOH7C1frPhlPRIquh8nuMQD41e2-g44Eq0oPga1a-M-d_fROgMaDzBp_1hLjoZfXCJHg6Cxvha6fNHjgyTYMv7XPxObY5v650-A1zD7Q/s320/480571303_9256086487806602_5479181076498919583_n.jpg" alt="School Event" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ48BnjgMPgYTXCGykRbuf5KaUKEEOVEXC3VzYcBEbeega8ETUH2qLlu8_abqPh_-ygHIA9qBG3WEJQ9TgBu7-v2k35uNfKQrHyVDXs60MFnv-Kk99t2yEJ-PMIrL_DoYcLxWXnMzjOFVjBzEQm9bw2QFupcEoFJU1jK3hg_IZhyDCy-buGRCgI69BlA4/s320/471854785_8965059373575983_4794915180974273154_n.jpg" alt="School Event" class="popup-image rounded-lg shadow-md h-48 w-full object-cover cursor-pointer">
+</div>
+
+<!-- ✅ Image Popup Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+  <img id="modalImage" class="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg border-4 border-white" src="" alt="Zoomed Image">
+</div>
+
+<!-- ✅ JavaScript -->
+<script>
+  const images = document.querySelectorAll('.popup-image');
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+
+  images.forEach(img => {
+    img.addEventListener('click', () => {
+      modalImage.src = img.src;
+      modal.classList.remove('hidden');
+    });
+  });
+
+  modal.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    modalImage.src = '';
+  });
+</script>
+
                 </div>
             </div>
         </div>
